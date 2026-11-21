@@ -1,9 +1,6 @@
-# AXI4 DMA Subsystem
+# AXI4 DMA Controller
 
-A parameterized AXI4 Direct Memory Access (DMA) Subsystem designed in SystemVerilog.
-The project implements an AXI4-based DMA engine capable of transferring data between
-memory regions with minimal CPU intervention.The design follows a modular RTL
-architecture and is verified using simulation.
+A parameterized AXI4 Direct Memory Access (DMA) Subsystem designed in SystemVerilog. The project implements an AXI4-based DMA engine capable of transferring data between memory regions with minimal CPU intervention. The design follows a modular RTL architecture and is verified using simulation.
 
 ## Features
 
@@ -29,94 +26,96 @@ architecture and is verified using simulation.
 ## Project Structure
 
 ```text
-AXI4-DMA-Subsystem/
+AXI4-DMA-Controller/
 ├── rtl/                 # RTL source files
 ├── tb/                  # Testbench files
-├── netlist/             # Synthesis outputs
-├── README.md            # Project documentation
-└── .gitignore           # Git ignore rules 
+├── docs/
+│   ├── block_diagram.png
+│   ├── waveform/        # Simulation waveform screenshots
+│   └── terminal_output/ # Terminal output screenshots
+├── README.md
+└── .gitignore
 ```
 
 ## Block Diagram
-![AXI4 DMA Subsystem](docs/block_diagram.png)
 
+![AXI4 DMA Block Diagram](docs/block_diagram.png)
 
 ## Simulation Results
 
-### FIFO
+### 1. FIFO
 
 **Waveform**
 
-![FIFO Waveform](docs/waveforms/fifo.png)
+![FIFO Waveform](docs/waveform/fifo.png)
 
----
-
-### Address Generator
+### 2. Address Generator
 
 **Waveform**
 
-![Address Generator Waveform](docs/waveforms/add_gen.png)
+![Address Generator Waveform](docs/waveform/add_gen.png)
 
 **Terminal Output**
 
 ![Address Generator Terminal](docs/terminal_output/add_gen_terminal.png)
 
----
-
-### Control FSM
+### 3. Control FSM
 
 **Waveform**
 
-![Control FSM Waveform](docs/waveforms/cfsm.png)
+![Control FSM Waveform](docs/waveform/cfsm.png)
 
 **Terminal Output**
 
 ![Control FSM Terminal](docs/terminal_output/cfsm_terminal.png)
 
----
-
-### Register Interface
+### 4. Register Interface
 
 **Waveform**
 
-![Register Interface Waveform](docs/waveforms/reg_interface.png)
+![Register Interface Waveform](docs/waveform/reg_interface.png)
 
 **Terminal Output**
 
 ![Register Interface Terminal](docs/terminal_output/reg_interface_terminal.png)
 
----
-
-### Read Master
+### 5. Read Master
 
 **Waveform**
 
-![Read Master Waveform](docs/waveforms/read_master.png)
+![Read Master Waveform](docs/waveform/read_master.png)
 
 **Terminal Output**
 
 ![Read Master Terminal](docs/terminal_output/read_master_terminal.png)
 
----
-
-### Write Master
+### 6. Write Master
 
 **Waveform**
 
-![Write Master Waveform](docs/waveforms/write_master.png)
+![Write Master Waveform](docs/waveform/write_master.png)
 
 **Terminal Output**
 
 ![Write Master Terminal](docs/terminal_output/write_master_terminal.png)
 
----
-
-### Interrupt Controller
+### 7. Interrupt Controller
 
 **Waveform**
 
-![Interrupt Controller Waveform](docs/waveforms/interrupt.png)
+![Interrupt Controller Waveform](docs/waveform/interrupt.png)
 
 **Terminal Output**
 
 ![Interrupt Controller Terminal](docs/terminal_output/interrupt_terminal.png)
+
+## Team Contributions
+
+Developed as a collaborative academic project.
+
+## My Contribution
+
+- Address Generator
+- Interrupt Controller
+- Top-level integration
+-
