@@ -1,0 +1,6 @@
+obj_dir/
+wave/
+*.vcd
+*.fst
+*.log
+*.out
