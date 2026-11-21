@@ -109,13 +109,4 @@ AXI4-DMA-Controller/
 
 ![Interrupt Controller Terminal](docs/terminal_output/interrupt_terminal.png)
 
-## Team Contributions
 
-Developed as a collaborative academic project.
-
-## My Contribution
-
-- Address Generator
-- Interrupt Controller
-- Top-level integration
--
